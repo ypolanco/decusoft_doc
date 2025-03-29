@@ -30,7 +30,25 @@ export default function page() {
           sections: [
             {
               heading: "Checking System Requirements",
-              content: "Ensure your system meets the minimum software requirements and has adequate storage."
+              content: "Ensure your system meets the minimum software requirements and has adequate storage.",
+              code:`
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt to Text | TailGrids</title>
+    <link
+      rel="shortcut icon"
+      href="./../assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./../assets/css/tailwind.css" />
+
+    <script defer src="./../assets/js/alpine.min.js"></script>
+  </head>
+</html>`,
             },
             {
               heading: "Resolving Common Errors",

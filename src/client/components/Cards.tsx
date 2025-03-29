@@ -3,6 +3,8 @@ import React from "react";
 // Article type for the parent component
 interface Article {
   id: number;
+  title:string;
+  introduction:string
 }
 
 // Cards prop type for the parent component
@@ -28,10 +30,10 @@ const Cards = ({ data }: CardsProps) => {
           {data.map((item) => (
             <div key={item.id} className="w-full px-4 md:w-1/2 lg:w-1/3">
               <SingleCard
-                CardTitle="Ready for SaaS Websites Crafted by TailGrids"
+                CardTitle={item.title}
                 titleHref="#"
                 btnHref={`/article/${item.id}`}
-                CardDescription="Lorem ipsum dolor sit amet, vehiculaum ero felis loreum fitiona fringilla goes scelerisque Interdum et."
+                CardDescription={item.introduction}
                 Button="Learn More"
               />
             </div>
