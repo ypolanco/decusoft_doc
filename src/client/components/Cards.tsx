@@ -1,32 +1,41 @@
 import React from "react";
 
+// Article type for the parent component
 interface Article {
   id: number;
 }
 
-interface Cards {
-  data:Article[]
+// Cards prop type for the parent component
+interface CardsProps {
+  data: Article[];
 }
 
-const Cards = ({data}:Cards) => {
+// SingleCard props type
+interface SingleCardProps {
+  CardDescription: string;
+  CardTitle: string;
+  titleHref: string;
+  btnHref: string;
+  Button: string;
+}
+
+// Cards component
+const Cards = ({ data }: CardsProps) => {
   return (
     <section className="bg-gray-1 pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap justify-center">
-
-        {data.map((item, id) => {
-          return(
-            <div key={id} className="w-full px-4 md:w-1/2 lg:w-1/3">
-            <SingleCard
-            CardTitle="Ready for SaaS Websites Crafted by TailGrids"
-            titleHref="#"
-            btnHref={`/article/${item.id}`}
-            CardDescription="Lorem ipsum dolor sit amet, vehiculaum ero felis loreum fitiona fringilla goes scelerisque Interdum et."
-            Button="Learn More"
-          />
+          {data.map((item) => (
+            <div key={item.id} className="w-full px-4 md:w-1/2 lg:w-1/3">
+              <SingleCard
+                CardTitle="Ready for SaaS Websites Crafted by TailGrids"
+                titleHref="#"
+                btnHref={`/article/${item.id}`}
+                CardDescription="Lorem ipsum dolor sit amet, vehiculaum ero felis loreum fitiona fringilla goes scelerisque Interdum et."
+                Button="Learn More"
+              />
             </div>
-          )
-        })}
+          ))}
         </div>
       </div>
     </section>
@@ -35,25 +44,26 @@ const Cards = ({data}:Cards) => {
 
 export default Cards;
 
+// SingleCard component
 const SingleCard = ({
   CardDescription,
   CardTitle,
   titleHref,
   btnHref,
   Button,
-}) => {
+}: SingleCardProps) => {
   return (
     <div className="">
       <div className="mb-8 rounded-lg bg-white px-6 py-8 shadow-1 duration-300 hover:shadow-3 sm:px-8 lg:px-6 xl:px-8">
         <h3>
           <a
             href={titleHref}
-            className="mb-3 block text-lg font-bold leading-tight text-dark hover:text-primary  sm:text-xl sm:leading-tight lg:text-lg lg:leading-tight xl:text-xl xl:leading-tight"
+            className="mb-3 block text-lg font-bold leading-tight text-dark hover:text-primary sm:text-xl sm:leading-tight lg:text-lg lg:leading-tight xl:text-xl xl:leading-tight"
           >
             {CardTitle}
           </a>
         </h3>
-        <p className="mb-5 text-base font-medium leading-relaxed text-body-color ">
+        <p className="mb-5 text-base font-medium leading-relaxed text-body-color">
           {CardDescription}
         </p>
         <a
