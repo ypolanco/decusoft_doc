@@ -26,7 +26,7 @@ interface SingleCardProps {
 // Cards component
 const Cards = ({ data }: CardsProps) => {
   return (
-    <section className="bg-gray-1 pb-3 pt-20 lg:pb-20 lg:pt-[120px]">
+    <section className="bg-gray-1 pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
         <div className="">
           <Title title="Assignment"/>
         </div>
