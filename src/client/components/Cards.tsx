@@ -1,4 +1,6 @@
 import React from "react";
+import Title from "./Title";
+import Link from "next/link"
 
 // Article type for the parent component
 interface Article {
@@ -24,7 +26,10 @@ interface SingleCardProps {
 // Cards component
 const Cards = ({ data }: CardsProps) => {
   return (
-    <section className="bg-gray-1 pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
+    <section className="bg-gray-1 pb-3 pt-20 lg:pb-20 lg:pt-[120px]">
+        <div className="">
+          <Title title="Assignment"/>
+        </div>
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap justify-center">
           {data.map((item) => (
@@ -58,12 +63,12 @@ const SingleCard = ({
     <div className="">
       <div className="mb-8 rounded-lg bg-white px-6 py-8 shadow-1 duration-300 hover:shadow-3 sm:px-8 lg:px-6 xl:px-8">
         <h3>
-          <a
+          <Link
             href={titleHref}
             className="mb-3 block text-lg font-bold leading-tight text-dark hover:text-primary sm:text-xl sm:leading-tight lg:text-lg lg:leading-tight xl:text-xl xl:leading-tight"
           >
             {CardTitle}
-          </a>
+          </Link>
         </h3>
         <p className="mb-5 text-base font-medium leading-relaxed text-body-color">
           {CardDescription}

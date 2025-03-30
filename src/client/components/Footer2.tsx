@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link"
 
 const Footer2 = () => {
   return (
@@ -7,8 +8,8 @@ const Footer2 = () => {
         <div className="-mx-4 flex flex-wrap lg:mb-14">
           <div className="w-full px-4 md:w-2/3 lg:w-1/3">
             <div className="mb-12 w-full">
-              <h4 className="text-3xl font-medium text-dark ">
-                Please feel free to get in touch with us
+              <h4 className="text-xl font-medium text-dark ">
+                <span className="text-2xl text-[#f05c21]">decusoft</span> knowledge center
               </h4>
             </div>
           </div>
@@ -35,10 +36,10 @@ const Footer2 = () => {
                 </div>
                 <div>
                   <h5 className="mb-4 text-lg font-semibold text-dark">
-                    Our Location
+                  Next Technical Workshop: Compensation Plan Calculations
                   </h5>
-                  <p className="text-base text-body-color ">
-                    401 Broadway, 24th Floor, Orchard Cloud View, London
+                  <p className="text-xl text-body-color ">
+                   4/27/2025
                   </p>
                 </div>
               </div>
@@ -63,14 +64,8 @@ const Footer2 = () => {
                 </div>
                 <div>
                   <h5 className="mb-4 text-lg font-semibold text-dark ">
-                    How Can We Help?
+                  <Link href="/" className="text-blue-600">Register for workshop</Link> 
                   </h5>
-                  <p className="mb-2 text-base text-body-color ">
-                    info@yourdomain.com
-                  </p>
-                  <p className="text-base text-body-color ">
-                    contact@yourdomain.com
-                  </p>
                 </div>
               </div>
             </div>
