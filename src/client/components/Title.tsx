@@ -6,7 +6,7 @@ interface Props {
 
 const Title = ({title}:Props) => {
   return (
-    <section className="">
+    <section className="my-4">
       <div className="mx-auto sm:container">
         <div>
           <h2 className="mb-5 text-2xl font-semibold text-dark">

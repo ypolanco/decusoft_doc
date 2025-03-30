@@ -38,7 +38,6 @@ export default function Article({ data }: HelpDeskProps) {
         <Link href="/" className=" text-blue-600"> Return to Support Center</Link>
         </div>
         <ArticleHeader title={article.title}/>
-      {/* <header className="text-4xl font-bold mb-8 text-center">{article.title}</header> */}
 <div className="p-5">
 
 <section className="mb-8">
@@ -60,12 +59,6 @@ export default function Article({ data }: HelpDeskProps) {
 </div>
 
 
-      <footer className="bg-zinc-100 p-4 text-gray-900 mt-12 text-center">
-        Need more help? Visit our{' '}
-        <Link href="/" className="text-blue-600 hover:underline">
-          support center
-        </Link>.
-      </footer>
     </div>
   );
 }

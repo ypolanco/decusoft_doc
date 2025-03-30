@@ -1,5 +1,4 @@
 import React from "react";
-import Title from "./Title";
 import Link from "next/link"
 
 // Article type for the parent component
@@ -27,10 +26,7 @@ interface SingleCardProps {
 // Cards component
 const Cards = ({ data }: CardsProps) => {
   return (
-    <section className="bg-gray-1 pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
-        <div className="">
-          <Title title="Assignment"/>
-        </div>
+    <section className="bg-gray-1 my-16">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap justify-center">
           {data.map((item) => (

@@ -3,6 +3,7 @@ import Cards from "../client/components/Cards";
 import Footer2 from "../client/components/Footer2";
 import PageTitle1 from "../client/components/PageTitle1";
 import TopicsFilter from "@/client/components/TopicsFilter";
+import Title from "@/client/components/Title";
 
 export default function Home() {
 
@@ -51,6 +52,9 @@ export default function Home() {
   return (
     <div className="bg-zinc-100">
       <PageTitle1 title={headerTitle} body="How can we help?"/>
+      <div className="">
+          <Title title="Assignment"/>
+        </div>
       <Cards data={helpDeskArticles}/>
       <div className="grid grid-cols-3 container mx-auto">
         <div className="col-span-3 order-2 md:col-span-2 md-order-1">
