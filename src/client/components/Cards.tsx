@@ -7,6 +7,7 @@ interface Article {
   id: number;
   title:string;
   introduction:string
+  ref: string; 
 }
 
 // Cards prop type for the parent component
@@ -36,7 +37,7 @@ const Cards = ({ data }: CardsProps) => {
             <div key={item.id} className="w-full px-4 md:w-1/2 lg:w-1/3">
               <SingleCard
                 CardTitle={item.title}
-                titleHref="#"
+                titleHref={item.ref}
                 btnHref={`/article/${item.id}`}
                 CardDescription={item.introduction}
                 Button="Learn More"

@@ -14,6 +14,7 @@ export default function Home() {
       id: 1,
       title: "Network Connectivity Issues",
       introduction: "Learn how to troubleshoot network problems.",
+      ref:"/article/1",
       sections: [
         {
           heading: "Identifying Problems",
@@ -25,6 +26,7 @@ export default function Home() {
       id: 2,
       title: "Software Installation Errors",
       introduction: "Resolve errors during software installation.",
+      ref:"/article/2",
       sections: [
         {
           heading: "Common Solutions",
@@ -36,6 +38,7 @@ export default function Home() {
       id: 3,
       title: "Learning and development",
       introduction: "Learn how to troubleshoot network problems.",
+      ref:"/article/3",
       sections: [
         {
           heading: "Identifying Problems",
