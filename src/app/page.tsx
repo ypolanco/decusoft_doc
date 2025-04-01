@@ -13,8 +13,8 @@ export default function Home() {
   const helpDeskArticles = [
     {
       id: 1,
-      title: "Network Connectivity Issues",
-      introduction: "Learn how to troubleshoot network problems.",
+      title: "I am seeing null value",
+      introduction: "Seeing null when you are expecting a value",
       ref:"/article/1",
       sections: [
         {
